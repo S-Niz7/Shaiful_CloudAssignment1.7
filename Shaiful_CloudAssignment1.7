@@ -1,0 +1,21 @@
+Difference Between Threads and Processes
+
+1	When a program is under execution, then it is known as a process.	A part /segment of a process is known as thread.
+
+2	A process has a self-contained execution environment. It has a complete set of private basic run-time resources and runs in its own memory space	
+A thread can execute even the smallest sequence of programmed instructions that can be managed independently by an operating system. Multiple threads can also 
+exist in a process and share resources, which allows it to be more efficient communication between threads
+
+3	It needs more time for work and conception.	It needs less time for work and conception.
+
+4	Context switching takes maximum time here.	Context switching takes minimum time.
+
+5	It has its own copy of the data segment of the parent process.	It has direct access to the data segment of its process.
+
+6	New processes require duplication of the parent process.	New threads are easily created.
+
+7	Processes are also called heavyweight processes as they use more resources	The threads are called light-weight processes as they share resources.
+
+8	Process is controlled by the operating system.	Threads are controlled by programmer in a program.
+
+9	If one process is fails then it will not affect the operation of another process.	If one thread is fails then it will affect the execution of another process.
